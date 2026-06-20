@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #101012;
+  color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: rgba(16, 16, 18, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #2a2a2e;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px dashed #1ee8e8;
+}
+
+.nav-link {
+  color: #f2f2f2 !important;
+  font-weight: 500;
+  margin: 0 0.65rem;
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: #1ee8e8 !important;
+}
+
+.btn-resume {
+  background-color: #1ee8e8;
+  color: #0a0a0a;
+  font-weight: 600;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.btn-resume:hover {
+  color: #0a0a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(30, 232, 232, 0.35);
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.accent {
+  color: #1ee8e8;
+}
+
+/* ===== Hero ===== */
+.hero {
+  padding-top: 6rem;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+.hero .subtitle {
+  font-size: 1.15rem;
+  color: #f2f2f2;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.hero p.lead-text {
+  color: #a8acb3;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #2a2a2e;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #1ee8e8;
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  transition: 0.2s ease;
+}
+.social-icon:hover {
+  background-color: #1ee8e8;
+  color: #0a0a0a;
+  transform: translateY(-3px);
+}
+
+.hero-img {
+  width: 80%;
+  max-width: 350px;
+  border: 2px dashed #2a2a2e;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* ===== Portfolio ===== */
+.project-card {
+  border: 1px solid #2a2a2e;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-title {
+  color: #1ee8e8;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.project-card p,
+.project-card li {
+  color: #a8acb3;
+  font-size: 0.95rem;
+}
+
+.project-card ul {
+  padding-left: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.tag-badge {
+  display: inline-block;
+  background-color: #3c3f44;
+  color: #f2f2f2;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  margin: 0 0.4rem 0.6rem 0;
+}
+
+/* ===== Skills ===== */
+.skill-group-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.education-box {
+  text-align: center;
+}
+
+.education-box h3 {
+  color: #1ee8e8;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+}
+
+.education-box p {
+  color: #f2f2f2;
+  margin-bottom: 0.25rem;
+}
+
+.education-box .years {
+  color: #a8acb3;
+  margin-top: 0.75rem;
+}
+
+/* ===== Contact ===== */
+.contact-card {
+  padding: 2.5rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.form-control {
+  background-color: #101012;
+  border: 1px solid #2a2a2e;
+  color: #f2f2f2;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+.form-control:focus {
+  background-color: #101012;
+  color: #f2f2f2;
+  border-color: #1ee8e8;
+  box-shadow: 0 0 0 0.2rem rgba(30, 232, 232, 0.12);
+}
+.form-control::placeholder {
+  color: #a8acb3;
+}
+
+.btn-send {
+  background-color: #3c3f44;
+  color: #1ee8e8;
+  font-weight: 600;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.2s ease;
+}
+.btn-send:hover {
+  background-color: #1ee8e8;
+  color: #0a0a0a;
+}
+
+/* ===== Footer ===== */
+footer {
+  border-top: 1px solid #2a2a2e;
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+footer .text-muted {
+  color: #a8acb3 !important;
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 991.98px) {
+  .hero {
+    text-align: center;
+    padding-top: 2.5rem;
+  }
+
+  .social-icon {
+    margin: 0 0.4rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 3.5rem 0;
+  }
+  .project-card {
+    padding: 1.25rem;
+  }
+}
